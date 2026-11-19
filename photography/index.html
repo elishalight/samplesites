@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Lena Hart Photography (sample)</title>
+<style>
+  *{box-sizing:border-box}html{scroll-behavior:smooth}
+  body{margin:0;font-family:'Helvetica Neue',Arial,sans-serif;color:#222;background:#fff}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:1.2rem 2rem}
+  nav b{font-weight:300;letter-spacing:.3em;text-transform:uppercase;font-size:.95rem}
+  nav a{margin-left:1.5rem;text-decoration:none;color:#555;font-size:.8rem;letter-spacing:.15em;text-transform:uppercase}
+  .intro{text-align:center;padding:3rem 1.5rem 1.5rem}.intro h1{font-weight:300;font-size:2.4rem;margin:0 0 .5rem;letter-spacing:.05em}
+  .intro p{color:#777;max-width:480px;margin:0 auto;line-height:1.6}
+  .gallery{display:grid;gap:.6rem;padding:1.5rem 2rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+  .tile{aspect-ratio:4/5;display:flex;align-items:flex-end;padding:.8rem;color:#fff;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase}
+  .tile.wide{grid-column:span 2;aspect-ratio:8/5}
+  section.info{max-width:760px;margin:0 auto;padding:3rem 1.5rem;text-align:center}
+  h2{font-weight:300;letter-spacing:.2em;text-transform:uppercase;font-size:1.1rem}
+  p.body{color:#666;line-height:1.7}
+  .btn{display:inline-block;border:1px solid #222;color:#222;padding:.8rem 1.8rem;text-decoration:none;font-size:.8rem;letter-spacing:.15em;text-transform:uppercase}
+  footer{text-align:center;padding:2rem 1rem;color:#999;font-size:.8rem}
+  @media(max-width:520px){.tile.wide{grid-column:auto;aspect-ratio:4/5}}
+</style>
+</head>
+<body>
+<nav><b>Lena Hart</b><div><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></div></nav>
+<div class="intro">
+  <h1>Light, place and people.</h1>
+  <p>Portrait, travel and event photography with a natural, unposed feel.</p>
+</div>
+<div class="gallery" id="work">
+  <div class="tile wide" style="background:linear-gradient(135deg,#355c7d,#c06c84)">Golden hour</div>
+  <div class="tile" style="background:linear-gradient(160deg,#2a2a2a,#7a7a7a)">Portraits</div>
+  <div class="tile" style="background:linear-gradient(160deg,#6a8d73,#d9c9a3)">Landscapes</div>
+  <div class="tile" style="background:linear-gradient(160deg,#a8763e,#f0d9b5)">Weddings</div>
+  <div class="tile wide" style="background:linear-gradient(135deg,#1f4068,#e43f5a)">City nights</div>
+  <div class="tile" style="background:linear-gradient(160deg,#84a59d,#f6bd60)">Travel</div>
+</div>
+<section class="info" id="about">
+  <h2>About</h2>
+  <p class="body">I'm Lena, a photographer who loves capturing real moments. Whether it's a family portrait, a trip abroad or a small event, I aim to make the day relaxed and the photos honest.</p>
+</section>
+<section class="info" id="contact">
+  <h2>Contact</h2>
+  <p class="body">Tell me about your idea and we'll plan the shoot together.<br>hello@example.com &middot; 000-000-0000</p>
+  <a class="btn" href="#work">Back to the work</a>
+</section>
+<footer>Sample website with a made-up business &middot; for demonstration only</footer>
+</body>
+</html>

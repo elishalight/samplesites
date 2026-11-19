@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Pulse Fitness Studio (sample)</title>
+<style>
+  *{box-sizing:border-box}html{scroll-behavior:smooth}
+  body{margin:0;font-family:system-ui,Segoe UI,Arial,sans-serif;background:#12141c;color:#e9ebf5}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.5rem;position:sticky;top:0;background:#12141cee;border-bottom:1px solid #232637}
+  nav b{font-size:1.15rem;letter-spacing:.08em;color:#9d85ff}nav a{margin-left:1.2rem;text-decoration:none;color:#cfd3e8;font-size:.9rem}
+  .hero{padding:5.5rem 1.5rem;text-align:center;background:radial-gradient(circle at 30% 20%,#3b2d8a,#12141c 60%)}
+  .hero h1{font-size:2.8rem;margin:0 0 .6rem;line-height:1.1}.hero p{max-width:520px;margin:0 auto 1.6rem;color:#b9bedb;line-height:1.5}
+  .btn{display:inline-block;background:#7a5cff;color:#fff;padding:.85rem 1.7rem;border-radius:10px;text-decoration:none;font-weight:700}
+  section{max-width:980px;margin:0 auto;padding:3rem 1.5rem}h2{margin-top:0;font-size:1.6rem}
+  .cards{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+  .card{background:#1b1e2b;border:1px solid #2a2e44;border-radius:14px;padding:1.2rem}
+  .card h3{margin:0 0 .4rem}.card p{margin:0;color:#aab0cf;font-size:.92rem;line-height:1.45}
+  .plan .price{font-size:2rem;font-weight:800;color:#9d85ff}.plan ul{padding-left:1.1rem;color:#c3c8e3;font-size:.92rem;line-height:1.7}
+  .plan.best{border-color:#7a5cff;box-shadow:0 0 0 1px #7a5cff}
+  .trainer{text-align:center}.avatar{width:64px;height:64px;border-radius:50%;margin:0 auto .7rem;background:linear-gradient(135deg,#7a5cff,#3ec6e0)}
+  footer{text-align:center;padding:2rem 1rem;color:#7d83a3;font-size:.85rem}
+</style>
+</head>
+<body>
+<nav><b>PULSE</b><div><a href="#classes">Classes</a><a href="#plans">Plans</a><a href="#trainers">Trainers</a></div></nav>
+<div class="hero">
+  <h1>Move better.<br>Feel stronger.</h1>
+  <p>Small-group classes and personal coaching for every level, in a friendly studio that keeps you coming back.</p>
+  <a class="btn" href="#plans">Start your free trial</a>
+</div>
+<section id="classes">
+  <h2>Classes</h2>
+  <div class="cards">
+    <div class="card"><h3>Strength Circuit</h3><p>Full-body training with weights, bands and bodyweight moves.</p></div>
+    <div class="card"><h3>HIIT Express</h3><p>30 minutes of high-energy intervals to raise your heart rate.</p></div>
+    <div class="card"><h3>Yoga Flow</h3><p>Stretch, breathe and build mobility at a steady pace.</p></div>
+    <div class="card"><h3>Beginner Basics</h3><p>Learn the fundamentals with a coach beside you.</p></div>
+  </div>
+</section>
+<section id="plans">
+  <h2>Membership plans</h2>
+  <div class="cards">
+    <div class="card plan"><h3>Drop-in</h3><div class="price">$12</div><ul><li>Per class</li><li>No commitment</li></ul></div>
+    <div class="card plan best"><h3>Monthly</h3><div class="price">$59</div><ul><li>Unlimited classes</li><li>Cancel any time</li><li>Free guest pass</li></ul></div>
+    <div class="card plan"><h3>Personal</h3><div class="price">$99</div><ul><li>Unlimited classes</li><li>2 coaching sessions</li><li>Custom plan</li></ul></div>
+  </div>
+</section>
+<section id="trainers">
+  <h2>Meet the trainers</h2>
+  <div class="cards">
+    <div class="card trainer"><div class="avatar"></div><h3>Alex</h3><p>Strength &amp; conditioning</p></div>
+    <div class="card trainer"><div class="avatar"></div><h3>Sam</h3><p>HIIT &amp; cardio</p></div>
+    <div class="card trainer"><div class="avatar"></div><h3>Jordan</h3><p>Yoga &amp; mobility</p></div>
+  </div>
+</section>
+<footer>Sample website with a made-up business &middot; for demonstration only</footer>
+</body>
+</html>

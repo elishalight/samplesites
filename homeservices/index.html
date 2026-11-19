@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Reliable Home Services (sample)</title>
+<style>
+  *{box-sizing:border-box}html{scroll-behavior:smooth}
+  body{margin:0;font-family:system-ui,Segoe UI,Arial,sans-serif;color:#1d2a40;background:#f5f8fc}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.5rem;background:#173a73;color:#fff;position:sticky;top:0}
+  nav b{font-size:1.1rem}nav a{color:#cfe0ff;text-decoration:none;margin-left:1.2rem;font-size:.9rem}
+  .hero{padding:4.5rem 1.5rem;text-align:center;color:#fff;background:linear-gradient(135deg,#2e6fd6,#173a73)}
+  .hero h1{font-size:2.5rem;margin:0 0 .6rem}.hero p{max-width:540px;margin:0 auto 1.5rem;line-height:1.5;color:#dbe8ff}
+  .btn{display:inline-block;background:#ffb703;color:#1d2a40;padding:.85rem 1.6rem;border-radius:8px;text-decoration:none;font-weight:700;border:0;font-size:1rem;cursor:pointer}
+  section{max-width:960px;margin:0 auto;padding:3rem 1.5rem}h2{margin-top:0;color:#173a73}
+  .cards{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+  .card{background:#fff;border-radius:12px;padding:1.2rem;box-shadow:0 2px 8px rgba(23,58,115,.1)}
+  .card h3{margin:.2rem 0 .4rem}.card p{margin:0;color:#52607a;font-size:.92rem;line-height:1.45}
+  .icon{width:42px;height:42px;border-radius:10px;background:#dbe8ff;color:#2e6fd6;font-weight:800;display:flex;align-items:center;justify-content:center}
+  .why{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));text-align:center}.why b{display:block;font-size:1.6rem;color:#2e6fd6}
+  form{display:grid;gap:.7rem;background:#fff;padding:1.4rem;border-radius:12px;box-shadow:0 2px 8px rgba(23,58,115,.1)}
+  input,select,textarea{padding:.7rem;border:1px solid #c9d6ea;border-radius:8px;font:inherit}
+  #msg{color:#2e6fd6;font-weight:600;min-height:1.2rem;margin:0}
+  footer{text-align:center;padding:2rem 1rem;color:#7a86a0;font-size:.85rem}
+</style>
+</head>
+<body>
+<nav><b>Reliable Home Services</b><div><a href="#services">Services</a><a href="#why">Why us</a><a href="#quote">Get a quote</a></div></nav>
+<div class="hero">
+  <h1>Fixed right, first time.</h1>
+  <p>Plumbing, electrical and general repairs from friendly, tidy, on-time professionals.</p>
+  <a class="btn" href="#quote">Get a free quote</a>
+</div>
+<section id="services">
+  <h2>What we do</h2>
+  <div class="cards">
+    <div class="card"><div class="icon">P</div><h3>Plumbing</h3><p>Leaks, blocked drains, taps, toilets and water heaters.</p></div>
+    <div class="card"><div class="icon">E</div><h3>Electrical</h3><p>Sockets, lighting, switchboards and safety checks.</p></div>
+    <div class="card"><div class="icon">H</div><h3>Handyman</h3><p>Shelves, doors, small repairs and flat-pack assembly.</p></div>
+    <div class="card"><div class="icon">A</div><h3>Air conditioning</h3><p>Installation, servicing and seasonal check-ups.</p></div>
+  </div>
+</section>
+<section id="why">
+  <h2>Why choose us</h2>
+  <div class="why">
+    <div><b>10+ years</b>experience</div>
+    <div><b>Same day</b>call-outs available</div>
+    <div><b>Upfront</b>pricing, no surprises</div>
+    <div><b>Fully</b>insured work</div>
+  </div>
+</section>
+<section id="quote">
+  <h2>Request a free quote</h2>
+  <form onsubmit="event.preventDefault();document.getElementById('msg').textContent='This is a sample site, so nothing was sent.';">
+    <input placeholder="Your name" required>
+    <input type="email" placeholder="Email" required>
+    <select><option>Plumbing</option><option>Electrical</option><option>Handyman</option><option>Air conditioning</option></select>
+    <textarea rows="3" placeholder="Tell us what you need"></textarea>
+    <button class="btn" type="submit">Send request</button>
+    <p id="msg"></p>
+  </form>
+</section>
+<footer>Sample website with a made-up business &middot; for demonstration only</footer>
+</body>
+</html>
